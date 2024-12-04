@@ -1,3 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 #canvas {
-  border: 1px solid red;
+  background-color: gray;
+}
+.action-btn-wrapper {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.action-btn {
+  padding: 6px 22px;
+  border-radius: 10px;
+  border: none;
+  background-color: rgb(217, 216, 214);
+  transition: background-color 0.2s ease-in;
+}
+.action-btn:hover {
+  background-color: rgb(173, 173, 171);
+}
+.action-btn:active {
+  transform: scale(0.98);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+#gco-wrapper {
+  position: absolute;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 500px;
+  flex-wrap: wrap;
+  gap: 10px 10px;
 }
